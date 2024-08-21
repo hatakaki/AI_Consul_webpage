@@ -1,24 +1,11 @@
-# vue-project
+# AI Consultant Webpage
 
-## Project setup
-```
+このプロジェクトは、AIコンサルティングサービスのウェブサイトを構築するためのものです。フロントエンドはVue.jsで、バックエンドはRuby on Railsで構築されています。
+
+## フロントエンド（Vue.js）
+
+### プロジェクトのセットアップ
+以下のコマンドを使用して、必要なパッケージをインストールします。
+
+```bash
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
