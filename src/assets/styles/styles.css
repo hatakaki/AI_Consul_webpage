@@ -1,0 +1,193 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    padding: 2em 1em;
+    background-color: rgba(255, 255, 255, 0.9);  /* 背景を白に近い透明度で統一 */
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #333;
+}
+
+/* トップ導入部分のスタイル */
+#top-introduction {
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+#top-introduction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6); /* 透明度を60%に調整して背景を暗くする */
+    z-index: 0;
+}
+
+#top-introduction h2, #top-introduction p {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+#top-introduction h2 {
+    font-size: 4em;
+    margin-top: 40vh;  /* セクションの中央に配置 */
+}
+
+#top-introduction p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* サービス項目のスタイル */
+#services {
+    margin-bottom: 3em;
+    text-align: center; /* タイトルを中央に配置 */
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.service-item p {
+    font-size: 1.2em;
+}
+
+/* プロフィールセクション */
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+#profile-image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#profile-description {
+    flex: 1;
+    margin-left: 20px;
+}
+
+#profile-description h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#profile-description p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .service-item {
+        width: calc(50% - 20px);
+    }
+
+    #profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #profile-image-container, #profile-description {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        width: 100%;
+    }
+
+    #top-introduction h2 {
+        font-size: 2.5em;
+    }
+
+    #top-introduction p {
+        font-size: 1.2em;
+    }
+}
+
+body {
+    color: #333;
+}
+
+/* 共通タイトルスタイル */
+.section-title {
+    font-size: 2em; /* タイトルのフォントサイズを統一 */
+    margin-bottom: 1em;
+    text-align: center;
+    color: #333;
+}
+
+/* サービスセクション用の新しいスタイル */
+.services-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* レイアウトが小さい画面でも対応するように */
+}
+
+.image-container {
+    width: 30%;
+    padding-right: 30px; /* 必要な余白を確保 */
+    margin: 0 auto; /* 画像を中央に配置 */
+}
+
+.service-description {
+    width: 65%;
+    padding-left: 20px;
+    text-align: left; /* テキストを左揃え */
+}
+
+.service-description p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .image-container, .service-description {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .service-description {
+    text-align: center; /* 小さい画面ではテキストを中央に揃える */
+  }
+}
